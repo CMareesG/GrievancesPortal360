@@ -1,0 +1,36 @@
+/* Hide scrollbar for webkit browsers */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  .scrollbar-hide {
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  /* Show scrollbar when hovering */
+  .scrollbar-hide:hover {
+    overflow-y: auto; /* Allow overflow on hover */
+  }
+  
+  .scrollbar-hide:hover::-webkit-scrollbar {
+    width: 8px; /* Set width of the scrollbar */
+  }
+  
+  .grievance-item {
+    width: 100%; /* Allow it to take the full width of the container */
+    max-width: 800px; /* Set a max width */
+    margin: 0 auto; /* Center the item */
+    padding: 16px; /* Optional padding for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional styling */
+    border-radius: 8px; /* Optional styling */
+  }
+
+  .scrollbar-hide:hover::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 100, 0.6); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Round corners of the scrollbar */
+  }
+  
+  .scrollbar-hide:hover::-webkit-scrollbar-track {
+    background: rgba(200, 200, 200, 0.1); /* Color of the scrollbar track */
+  }
+  
